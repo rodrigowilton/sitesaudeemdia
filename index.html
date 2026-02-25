@@ -63,20 +63,73 @@
                     </h2>
                 </div>
             </div>
-            <div class="flex-1 relative">
-                <div class="w-64 h-[500px] bg-slate-900 rounded-[3rem] border-[8px] border-slate-800 shadow-2xl mx-auto relative overflow-hidden">
-                    <div class="absolute top-0 w-full h-6 bg-slate-800 flex justify-center items-end pb-1">
-                        <div class="w-16 h-1 bg-slate-700 rounded-full"></div>
+
+        <!-- ===== CELULAR COM SPLASH E ALERTA - CORRIGIDO ===== -->
+        <div class="flex-1 relative">
+            <div class="w-64 h-[500px] bg-slate-900 rounded-[3rem] border-[8px] border-slate-800 shadow-2xl mx-auto relative overflow-hidden transform hover:scale-105 transition-transform duration-500">
+                
+                <!-- Câmera/falante do celular -->
+                <div class="absolute top-0 w-full h-6 bg-slate-800 flex justify-center items-end pb-1 z-10">
+                    <div class="w-16 h-1 bg-slate-700 rounded-full"></div>
+                </div>
+
+                <!-- TELA DO SPLASH - TUDO BRANCO PARA DESTACAR -->
+                <div class="h-full w-full pt-6 bg-gradient-to-b from-slate-900 to-slate-950">
+                    
+                    <!-- Hora atual - BRANCO -->
+                    <div class="text-center mt-1 mb-4">
+                        <span class="text-xs font-mono text-white font-bold">
+                            14:38
+                        </span>
                     </div>
-                    <div class="p-4 pt-10">
-                        <div class="bg-red-500 rounded-2xl p-4 text-white text-center animate-pulse">
-                            <span class="material-symbols-outlined text-3xl">pill</span>
-                            <p class="text-[10px] font-bold mt-1">HORA DO REMÉDIO</p>
-                            <p class="text-sm font-black">Vitamina D</p>
+
+                    <!-- Logo e título completo -->
+                    <div class="flex flex-col items-center mb-6">
+                        <!-- Logo com fundo verde -->
+                        <div class="p-3 bg-emerald-500 rounded-2xl mb-3 shadow-lg">
+                            <span class="material-symbols-outlined text-white text-2xl">pill</span>
                         </div>
+                        
+                        <!-- Título COMPLETO: SAÚDE EM DIA -->
+                        <h2 class="text-center text-lg font-black tracking-tighter uppercase text-white">
+                            SAÚDE <span class="text-emerald-400">EM</span> DIA
+                        </h2>
+                    </div>
+
+                    <!-- Card de notificação (ALERTA) destacado -->
+                    <div class="mx-4 p-4 bg-red-500 rounded-2xl animate-pulse shadow-xl mb-6">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-white text-2xl">pill</span>
+                            <div class="flex-1">
+                                <p class="text-[10px] font-black text-white/80 uppercase tracking-wider">HORA DO REMÉDIO</p>
+                                <p class="text-base font-black text-white leading-tight">VITAMINA D</p>
+                                <p class="text-[10px] text-white/70 font-bold mt-1">10:30 • Agora</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informações inferiores -->
+                    <div class="absolute bottom-8 left-0 right-0 flex flex-col items-center gap-3">
+                        <!-- Versão -->
+                        <div class="px-3 py-1 bg-slate-800/80 rounded-full border border-slate-700">
+                            <span class="text-xs font-mono text-white font-bold">v1.0.9</span>
+                        </div>
+
+                        <!-- Barra de progresso -->
+                        <div class="w-32 h-1.5 bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full w-3/4 bg-emerald-500 animate-pulse"></div>
+                        </div>
+
+                        <!-- Indicador de home -->
+                        <div class="w-12 h-1 bg-slate-700 rounded-full mt-1"></div>
                     </div>
                 </div>
             </div>
+            <!-- Legenda do celular -->
+            <p class="text-center text-xs text-slate-500 font-bold mt-4 tracking-wider">
+                TELA DE SPLASH COM ALERTA EM TEMPO REAL
+            </p>
+        </div>
         </div>
     </section>
 
