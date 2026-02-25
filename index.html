@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde em Dia | Exclusivo para Android</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .android-gradient {
+            background: linear-gradient(135deg, #3DDC84 0%, #073042 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-sm sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <div class="bg-green-500 p-1.5 rounded-lg">
+                <span class="material-symbols-outlined text-white text-2xl">pill</span>
+            </div>
+            <span class="text-xl font-black tracking-tighter">SAÚDE EM DIA</span>
+        </div>
+        <div class="hidden md:flex gap-8 font-bold text-sm text-slate-600">
+            <a href="#funciona" class="hover:text-green-600">Como Funciona</a>
+            <a href="#seguranca" class="hover:text-green-600">Segurança & Suporte</a>
+        </div>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">EXCLUSIVO ANDROID</span>
+    </nav>
+
+    <section class="relative overflow-hidden bg-white pt-16 pb-24 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-black leading-[0.9] tracking-tighter mb-6">
+                    SUA SAÚDE <br> <span class="text-green-500">MERECE</span> ESSA <br> DISCIPLINA.
+                </h1>
+                <p class="text-lg text-slate-600 font-medium mb-10 max-w-lg">
+                    O assistente inteligente que transforma seu Android em um aliado vital para o controle de medicamentos e consultas médicas.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <!-- CORRIGIDO: href="/SaudeEmDia.apk" com S e E maiúsculos -->
+                    <a href="/SaudeEmDia.apk" download="SaudeEmDia.apk" class="bg-slate-900 text-white px-8 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:bg-green-600 transition-all shadow-xl">
+                        <span class="material-symbols-outlined">download</span>
+                        BAIXAR PARA ANDROID
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div class="w-64 h-[500px] bg-slate-900 rounded-[3rem] border-[8px] border-slate-800 shadow-2xl mx-auto relative overflow-hidden">
+                    <div class="absolute top-0 w-full h-6 bg-slate-800 flex justify-center items-end pb-1">
+                        <div class="w-16 h-1 bg-slate-700 rounded-full"></div>
+                    </div>
+                    <div class="p-4 pt-10">
+                        <div class="bg-red-500 rounded-2xl p-4 text-white text-center animate-pulse">
+                            <span class="material-symbols-outlined text-3xl">pill</span>
+                            <p class="text-[10px] font-bold mt-1">HORA DO REMÉDIO</p>
+                            <p class="text-sm font-black">Vitamina D</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="funciona" class="py-24 bg-slate-100 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black tracking-tighter uppercase italic">Por que escolher o Saúde em Dia?</h2>
+                <div class="h-1.5 w-24 bg-green-500 mx-auto mt-2"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow border border-slate-200">
+                    <div class="size-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-blue-600 text-3xl">record_voice_over</span>
+                    </div>
+                    <h3 class="text-xl font-black mb-3">Alertas por Voz</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">
+                        Não é apenas um toque. O app fala o nome do remédio e a dosagem, garantindo que você ouça mesmo se o celular estiver longe.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow border border-slate-200">
+                    <div class="size-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-green-600 text-3xl">calendar_month</span>
+                    </div>
+                    <h3 class="text-xl font-black mb-3">Uso Contínuo</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">
+                        Gerenciamento inteligente para remédios de uso diário. Registrou uma vez? O app cuida da agenda para o resto da vida.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow border border-slate-200">
+                    <div class="size-14 bg-orange-50 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-orange-600 text-3xl">medical_services</span>
+                    </div>
+                    <h3 class="text-xl font-black mb-3">Agenda Médica</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">
+                        Centralize suas consultas e contatos de emergência em um único lugar seguro e de fácil acesso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seguranca" class="py-24 px-6 text-center bg-slate-900 text-white">
+        <div class="max-w-3xl mx-auto">
+            <span class="material-symbols-outlined text-green-400 text-6xl mb-6">shield_check</span>
+            <h2 class="text-4xl font-black tracking-tighter mb-6">Segurança e Suporte Direto</h2>
+            <p class="text-lg text-slate-400 mb-10 leading-relaxed font-medium">
+                Sua privacidade é nossa prioridade. O Saúde em Dia funciona de forma nativa e segura. Caso tenha qualquer dúvida sobre a instalação ou uso, fale diretamente com o desenvolvedor.
+            </p>
+            
+            <div class="flex flex-col items-center gap-8">
+                <a href="https://wa.me/5527992734399" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-2xl font-black text-lg flex items-center gap-3 transition-transform hover:scale-105 shadow-lg">
+                    <span class="material-symbols-outlined">chat</span>
+                    FALAR NO WHATSAPP: 27 99273-4399
+                </a>
+
+                <div class="inline-flex flex-wrap justify-center items-center gap-6 px-8 py-4 bg-white/5 rounded-3xl border border-white/10">
+                    <div class="text-left">
+                        <p class="text-xs font-black uppercase tracking-widest text-green-400">Status do App</p>
+                        <p class="text-lg font-bold">100% Android Nativo</p>
+                    </div>
+                    <div class="hidden sm:block h-10 w-px bg-white/20"></div>
+                    <div class="text-left">
+                        <p class="text-xs font-black uppercase tracking-widest text-green-400">Versão</p>
+                        <p class="text-lg font-bold">Estável 1.0.9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-green-600 text-3xl">pill</span>
+                <span class="text-xl font-black tracking-tighter">SAÚDE EM DIA</span>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-2">
+                <p class="text-slate-400 text-sm font-bold">
+                    &copy; 2026 Saúde em Dia. Tecnologia exclusiva para Android.
+                </p>
+                <a href="https://wa.me/5527992734399" target="_blank" class="text-green-600 font-bold text-sm hover:underline">
+                    Suporte: (27) 99273-4399
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
