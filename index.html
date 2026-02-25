@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saúde em Dia | Exclusivo para Android</title>
+    <title>Saúde em Dia | R$5,00/mês - Exclusivo Android</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
         .android-gradient {
             background: linear-gradient(135deg, #3DDC84 0%, #073042 100%);
+        }
+        .preco-destaque {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
         }
     </style>
 </head>
@@ -23,25 +26,45 @@
         </div>
         <div class="hidden md:flex gap-8 font-bold text-sm text-slate-600">
             <a href="#funciona" class="hover:text-green-600">Como Funciona</a>
+            <a href="#planos" class="hover:text-green-600">Planos</a>
             <a href="#seguranca" class="hover:text-green-600">Segurança & Suporte</a>
         </div>
-        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">EXCLUSIVO ANDROID</span>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">sell</span>
+            R$5,00/MÊS
+        </span>
     </nav>
 
     <section class="relative overflow-hidden bg-white pt-16 pb-24 px-6">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 text-center md:text-left">
+                <!-- NOVO: Badge de preço em destaque -->
+                <div class="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full mb-6 font-bold">
+                    <span class="material-symbols-outlined text-yellow-600">bolt</span>
+                    <span>LANÇAMENTO: APENAS R$5,00 POR MÊS</span>
+                </div>
+                
                 <h1 class="text-5xl md:text-7xl font-black leading-[0.9] tracking-tighter mb-6">
                     SUA SAÚDE <br> <span class="text-green-500">MERECE</span> ESSA <br> DISCIPLINA.
                 </h1>
-                <p class="text-lg text-slate-600 font-medium mb-10 max-w-lg">
+                <p class="text-lg text-slate-600 font-medium mb-6 max-w-lg">
                     O assistente inteligente que transforma seu Android em um aliado vital para o controle de medicamentos e consultas médicas.
                 </p>
+                
+                <!-- NOVO: Preço destacado -->
+                <div class="flex items-center gap-3 mb-8 justify-center md:justify-start">
+                    <div class="flex items-baseline">
+                        <span class="text-4xl font-black text-green-600">R$5</span>
+                        <span class="text-xl text-slate-500 font-bold">,00</span>
+                    </div>
+                    <span class="text-slate-500 font-bold text-lg">/mês</span>
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-black">SEM FIDELIDADE</span>
+                </div>
+                
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <!-- CORRIGIDO: href="/SaudeEmDia.apk" com S e E maiúsculos -->
                     <a href="/SaudeEmDia.apk" download="SaudeEmDia.apk" class="bg-slate-900 text-white px-8 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:bg-green-600 transition-all shadow-xl">
                         <span class="material-symbols-outlined">download</span>
-                        BAIXAR PARA ANDROID
+                        BAIXAR POR R$5,00/MÊS
                     </a>
                 </div>
             </div>
@@ -56,6 +79,72 @@
                             <p class="text-[10px] font-bold mt-1">HORA DO REMÉDIO</p>
                             <p class="text-sm font-black">Vitamina D</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: Planos e Preços -->
+    <section id="planos" class="py-24 px-6 bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-green-600 font-black text-sm tracking-widest uppercase">Investimento</span>
+                <h2 class="text-4xl md:text-5xl font-black tracking-tighter mt-2 mb-4">
+                    MENOS DE <span class="text-green-600">R$0,17</span> POR DIA
+                </h2>
+                <div class="h-1.5 w-32 bg-green-500 mx-auto"></div>
+                <p class="text-lg text-slate-600 mt-6 max-w-2xl mx-auto font-medium">
+                    Pelo preço de um café você cuida da sua saúde com o melhor assistente pessoal
+                </p>
+            </div>
+
+            <div class="max-w-md mx-auto">
+                <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border-2 border-green-500 transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-green-500 py-4 px-6 text-center">
+                        <span class="text-white font-black text-xl">PLANO ÚNICO</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-center mb-6">
+                            <div class="flex items-center justify-center gap-1">
+                                <span class="text-3xl font-bold text-slate-400">R$</span>
+                                <span class="text-7xl font-black text-slate-900">5</span>
+                                <span class="text-3xl font-bold text-slate-400">,00</span>
+                            </div>
+                            <p class="text-slate-500 font-bold text-lg">por mês</p>
+                            <p class="text-sm text-green-600 font-black mt-2">Cancele quando quiser</p>
+                        </div>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                <span class="font-medium">Alertas por voz personalizados</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                <span class="font-medium">Agenda de medicamentos ilimitada</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                <span class="font-medium">Consultas médicas organizadas</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                <span class="font-medium">Suporte direto via WhatsApp</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                <span class="font-medium">Atualizações gratuitas</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="/SaudeEmDia.apk" download="SaudeEmDia.apk" class="block w-full bg-slate-900 hover:bg-green-600 text-white text-center font-black py-5 rounded-2xl text-lg transition-all">
+                            ASSINAR POR R$5,00
+                        </a>
+                        
+                        <p class="text-xs text-center text-slate-400 mt-4">
+                            *Pagamento via PIX ou transferência. Enviamos o app após confirmação.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -106,7 +195,7 @@
             <span class="material-symbols-outlined text-green-400 text-6xl mb-6">shield_check</span>
             <h2 class="text-4xl font-black tracking-tighter mb-6">Segurança e Suporte Direto</h2>
             <p class="text-lg text-slate-400 mb-10 leading-relaxed font-medium">
-                Sua privacidade é nossa prioridade. O Saúde em Dia funciona de forma nativa e segura. Caso tenha qualquer dúvida sobre a instalação ou uso, fale diretamente com o desenvolvedor.
+                Sua privacidade é nossa prioridade. O Saúde em Dia funciona de forma nativa e segura. Caso tenha qualquer dúvida sobre a instalação, pagamento ou uso, fale diretamente com o desenvolvedor.
             </p>
             
             <div class="flex flex-col items-center gap-8">
@@ -125,6 +214,11 @@
                         <p class="text-xs font-black uppercase tracking-widest text-green-400">Versão</p>
                         <p class="text-lg font-bold">Estável 1.0.9</p>
                     </div>
+                    <div class="hidden sm:block h-10 w-px bg-white/20"></div>
+                    <div class="text-left">
+                        <p class="text-xs font-black uppercase tracking-widest text-green-400">Mensalidade</p>
+                        <p class="text-lg font-bold">R$5,00</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,7 +232,7 @@
             </div>
             <div class="flex flex-col items-center md:items-end gap-2">
                 <p class="text-slate-400 text-sm font-bold">
-                    &copy; 2026 Saúde em Dia. Tecnologia exclusiva para Android.
+                    &copy; 2026 Saúde em Dia. Apenas R$5,00/mês - Tecnologia exclusiva para Android.
                 </p>
                 <a href="https://wa.me/5527992734399" target="_blank" class="text-green-600 font-bold text-sm hover:underline">
                     Suporte: (27) 99273-4399
