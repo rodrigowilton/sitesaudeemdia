@@ -264,6 +264,11 @@
                         <p class="text-xs font-black uppercase tracking-widest text-green-400">Mensalidade</p>
                         <p class="text-lg font-bold">R$5,00</p>
                     </div>
+                    <div class="hidden sm:block h-10 w-px bg-white/20"></div>
+                    <div class="text-left">
+                        <p class="text-xs font-black uppercase tracking-widest text-green-400">Visitas</p>
+                        <p class="text-lg font-bold" id="visit-count">...</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -286,5 +291,19 @@
         </div>
     </footer>
 
+
+    <script>
+      // Contador de visitas usando CountAPI (gratuito, sem cadastro)
+      fetch('https://api.countapi.xyz/hit/saudeemdia.app/visits')
+        .then(r => r.json())
+        .then(data => {
+          const el = document.getElementById('visit-count');
+          if (el) el.textContent = data.value.toLocaleString('pt-BR');
+        })
+        .catch(() => {
+          const el = document.getElementById('visit-count');
+          if (el) el.textContent = '—';
+        });
+    </script>
 </body>
 </html>
